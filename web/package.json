@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3000",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev --port 3000",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "test": "vitest",
@@ -15,8 +15,8 @@
     "test:e2e": "playwright test",
     "test:visual": "playwright test --update-snapshots",
     "test:ci": "vitest run --coverage && playwright test",
-    "dev:web": "tsx dev-server.ts",
-    "build:web": "vite build --config vite.config.ts",
+    "dev:web": "node init && tsx dev-server.ts",
+    "build:web": "node init && vite build --config vite.config.ts",
     "preview:web": "vite preview --config vite.config.ts --port 4001"
   },
   "dependencies": {

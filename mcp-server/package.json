@@ -2,7 +2,7 @@
   "name": "claude-code-explorer-mcp",
   "version": "1.1.0",
   "mcpName": "io.github.nirholas/claude-code-explorer-mcp",
-  "description": "MCP server for exploring the Claude Code source code — STDIO, HTTP, and SSE transports",
+  "description": "MCP server for exploring the Claude Code source code \u2014 STDIO, HTTP, and SSE transports",
   "repository": {
     "type": "git",
     "url": "https://github.com/nirholas/claude-code.git"
@@ -13,10 +13,10 @@
     "claude-code-explorer-mcp": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "start:http": "node dist/http.js",
-    "dev": "npx tsx src/index.ts"
+    "build": "node init && tsc",
+    "start": "node init && node dist/index.js",
+    "start:http": "node init && node dist/http.js",
+    "dev": "node init && npx tsx src/index.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
@@ -29,5 +29,3 @@
     "typescript": "^5.7.0"
   }
 }
-
-

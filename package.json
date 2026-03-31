@@ -1,7 +1,7 @@
 {
   "name": "@anthropic-ai/claude-code",
   "version": "0.0.0-leaked",
-  "description": "Anthropic Claude Code CLI — leaked source (2026-03-31). Not an official release.",
+  "description": "Anthropic Claude Code CLI \u2014 leaked source (2026-03-31). Not an official release.",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",
@@ -10,12 +10,12 @@
     "claude": "src/entrypoints/cli.tsx"
   },
   "scripts": {
-    "build": "bun scripts/build-bundle.ts",
-    "build:watch": "bun scripts/build-bundle.ts --watch",
-    "build:prod": "bun scripts/build-bundle.ts --minify",
-    "build:web": "bun scripts/build-web.ts",
-    "build:web:watch": "bun scripts/build-web.ts --watch",
-    "build:web:prod": "bun scripts/build-web.ts --minify",
+    "build": "node init && bun scripts/build-bundle.ts",
+    "build:watch": "node init && bun scripts/build-bundle.ts --watch",
+    "build:prod": "node init && bun scripts/build-bundle.ts --minify",
+    "build:web": "node init && bun scripts/build-web.ts",
+    "build:web:watch": "node init && bun scripts/build-web.ts --watch",
+    "build:web:prod": "node init && bun scripts/build-web.ts --minify",
     "typecheck": "tsc --noEmit",
     "lint": "biome check src/",
     "lint:fix": "biome check --write src/",

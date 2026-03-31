@@ -40,6 +40,9 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     title: "Claude Code",
   },
+  other: {
+    "mobile-web-app-capable": "yes",
+  },
   icons: {
     icon: "/favicon.ico",
     apple: [{ url: "/icons/icon-192.png", sizes: "192x192" }],
