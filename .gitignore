@@ -8,8 +8,6 @@ build/
 *.tsbuildinfo
 
 # Environment
-.env
-.env.local
 .env.*.local
 
 # Prompts
@@ -24,8 +22,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
-.vscode/settings.json
-.vscode/launch.json
 
 # Debug & logs
 *.log
@@ -43,3 +39,8 @@ tmp/
 temp/
 
 
+config.bat
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
